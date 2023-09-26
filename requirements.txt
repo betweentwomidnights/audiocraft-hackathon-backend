@@ -3,7 +3,6 @@ altair==5.1.1
 antlr4-python3-runtime==4.9.3
 anyio==4.0.0
 attrs==23.1.0
--e git+https://github.com/betweentwomidnights/audiocraft-hackathon-backend.git@5c13e2cdee98f1b3a963a85a45e9ae541c869edc#egg=audiocraft
 audioread==3.0.0
 av==10.0.0
 blinker==1.6.2
@@ -43,6 +42,7 @@ gevent==23.7.0
 gradio==3.41.2
 gradio_client==0.5.0
 greenlet==2.0.2
+gunicorn==21.2.0
 h11==0.14.0
 httpcore==0.17.3
 httpx==0.24.1
@@ -80,6 +80,7 @@ packaging==23.1
 pandas==2.1.0
 pathy==0.10.2
 Pillow==10.0.0
+pipreqs==0.4.13
 platformdirs==3.10.0
 pooch==1.7.0
 preshed==3.0.8
@@ -124,7 +125,7 @@ toolz==0.12.0
 torch==2.0.1
 torchaudio==2.0.2
 torchmetrics==1.1.1
-torchvision==0.15.2+cu117
+torchvision==0.15.2
 tqdm==4.66.1
 transformers==4.32.1
 treetable==0.2.5
@@ -136,6 +137,8 @@ uvicorn==0.23.2
 waitress==2.1.2
 wasabi==1.1.2
 websockets==11.0.3
+Werkzeug==2.3.7
 xformers==0.0.21
+yarg==0.1.9
 zope.event==5.0
 zope.interface==6.0
