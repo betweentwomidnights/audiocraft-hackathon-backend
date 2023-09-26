@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Your default command here, e.g.,
-CMD [ "python", "your_script.py" ]
+CMD [ "python", "backend.py" ]

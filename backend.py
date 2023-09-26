@@ -55,14 +55,14 @@ def calculate_duration(bpm, min_duration, max_duration):
         duration = single_bar_duration * bars
     return duration
 
-def create_slices(song, sr, slice_duration, num_slices=5):
+def create_slices(song, sr, slice_duration, num_slices=5, bpm=75):
     song_length = song.shape[-1] / sr
     slices = []
     first_slice_waveform = song[..., :int(slice_duration * sr)]
     slices.append(first_slice_waveform)
 
     for i in range(1, num_slices):
-        random_start = random.choice(range(0, int((song_length - slice_duration) * sr), int(4 * 60 / 69.31 * sr)))
+        random_start = random.choice(range(0, int((song_length - slice_duration) * sr), int(4 * 60 / bpm * sr)))
         slice_waveform = song[..., random_start:random_start + int(slice_duration * sr)]
         if len(slice_waveform.squeeze()) < int(slice_duration * sr):
             additional_samples_needed = int(slice_duration * sr) - len(slice_waveform.squeeze())
