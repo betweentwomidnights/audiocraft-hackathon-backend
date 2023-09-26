@@ -64,5 +64,5 @@ dataset/*
 
 .vs/
 
-models/vanya_aidnb_0.1
-models/budots_remix
+audiocraft/models/vanya_aidnb_0.1
+audiocraft/models/budots_remix
